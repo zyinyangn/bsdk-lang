@@ -1,4 +1,4 @@
-import { TokenTypes } from "../../constants/bhaiLangSpec";
+import { TokenTypes } from "../../constants/bsdkLangSpec";
 import { Token, Tokenizer } from "../tokenizer/types";
 
 

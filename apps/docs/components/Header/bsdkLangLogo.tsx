@@ -1,4 +1,4 @@
-export default function BhaiLangLogo() {
+export default function bsdkLangLogo() {
   return (
     <svg
       className="h-min w-full"

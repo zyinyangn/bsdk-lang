@@ -1,6 +1,6 @@
 import Statement from ".";
 
-import { TokenTypes } from "../../../constants/bhaiLangSpec";
+import { TokenTypes } from "../../../constants/bsdkLangSpec";
 import { NodeType } from "../../../constants/constants";
 import TokenExecutor from "../tokenExecutor";
 import { ASTNode } from "../types/nodeTypes";
@@ -18,7 +18,7 @@ export default class VariableStatement extends Statement {
 
   getStatement(): ASTNode {
     this._tokenExecutor.eatTokenAndForwardLookahead(
-      TokenTypes.BHAI_YE_HAI_TYPE
+      TokenTypes.bsdk_YE_HAI_TYPE
     );
 
     const declarations = this._getVariableDeclarationList();

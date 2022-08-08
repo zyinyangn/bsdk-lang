@@ -1,4 +1,4 @@
-import { Spec } from "../../constants/bhaiLangSpec";
+import { Spec } from "../../constants/bsdkLangSpec";
 import InvalidStateException from "../../exceptions/invalidStateException";
 
 import { Token, Tokenizer } from "./types";

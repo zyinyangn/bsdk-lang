@@ -45,10 +45,10 @@ import StatementList from "../components/parser/statementList";
 import TokenExecutor from "../components/parser/tokenExecutor";
 import TokenizerImpl from "../components/tokenizer";
 import { Tokenizer } from "../components/tokenizer/types";
-import { SPEC } from "../constants/bhaiLangSpec";
+import { SPEC } from "../constants/bsdkLangSpec";
 
 
-export default class BhaiLangModule {
+export default class bsdkLangModule {
   private static _tokenizer?: Tokenizer;
   private static _initStatement?: InitStatement;
   private static _parser?: Parser;

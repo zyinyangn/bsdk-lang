@@ -1,4 +1,4 @@
-import parser from "bhai-lang-parser";
+import parser from "bsdk-lang-parser";
 
 import InterpreterModule from "../module/interpreterModule";
 

@@ -1,4 +1,4 @@
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "bsdk-lang-parser";
 
 export default interface Visitor {
   visitNode(node: ASTNode): unknown;

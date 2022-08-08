@@ -1,5 +1,5 @@
 import Visitor from ".";
-import { ASTNode } from "bhai-lang-parser";
+import { ASTNode } from "bsdk-lang-parser";
 
 export default class NumericLiteral implements Visitor {
   visitNode(node: ASTNode) {

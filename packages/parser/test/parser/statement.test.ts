@@ -1,9 +1,9 @@
 import Statement from "../../src/components/parser/statement";
 import BlockStatement from "../../src/components/parser/statement/blockStatement";
-import { TokenTypes } from "../../src/constants/bhaiLangSpec";
-import BhaiLangModule from "../../src/module/bhaiLangModule";
+import { TokenTypes } from "../../src/constants/bsdkLangSpec";
+import bsdkLangModule from "../../src/module/bsdkLangModule";
 
-jest.mock("../../src/module/bhaiLangModule");
+jest.mock("../../src/module/bsdkLangModule");
 
 const blockStatementMock = new (<any>(
   BlockStatement
@@ -19,7 +19,7 @@ test("test getStatementImpl of statement class with should success", () => {
     value: "{",
   };
 
-  BhaiLangModule.getBlockStatement = jest
+  bsdkLangModule.getBlockStatement = jest
     .fn()
     .mockReturnValue(blockStatementMock);
 
@@ -27,5 +27,5 @@ test("test getStatementImpl of statement class with should success", () => {
     blockStatementMock
   );
 
-  expect(BhaiLangModule.getBlockStatement).toHaveBeenCalledTimes(1);
+  expect(bsdkLangModule.getBlockStatement).toHaveBeenCalledTimes(1);
 });
